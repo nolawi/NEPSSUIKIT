@@ -25,7 +25,7 @@
     ".prettierrc": "jsonc",
     ".stylelintrc": "jsonc"
   },
-  // Angular schematics 插件: https://marketplace.visualstudio.com/items?itemName=cyrilletuzi.angular-schematics
+  // Angular schematics
   "ngschematics.schematics": [
     "ng-alain"
   ]
