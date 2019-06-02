@@ -59,7 +59,7 @@ export class StartupService {
       resolve(null);
     });
   }
-  
+
   private viaMock(resolve: any, reject: any) {
     // const tokenData = this.tokenService.get();
     // if (!tokenData.token) {
