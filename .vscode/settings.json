@@ -1,4 +1,7 @@
 {
+  "typescript.allowWorkspaceTsdkPaths": true,
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "prettier.stylelintIntegration": true,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": true
@@ -17,11 +20,6 @@
     "**/node_modules/*/**": true,
     "**/dist/*/**": true,
     "**/coverage/*/**": true
-  },
-  "files.associations": {
-    "*.json": "jsonc",
-    ".prettierrc": "jsonc",
-    ".stylelintrc": "jsonc"
   },
   // Angular schematics
   "ngschematics.schematics": [
