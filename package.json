@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "npm run color-less && ng serve -o",
+    "start": "npm run && ng serve -o",
     "build": "npm run color-less && ng build --prod --build-optimizer",
     "test": "ng test",
     "lint": "npm run lint:ts && npm run lint:style",
@@ -50,9 +50,11 @@
     "screenfull": "^4.2.0",
     "stylelint": "^10.0.1",
     "stylelint-config-standard": "^18.3.0",
+    "tsd": "^0.7.3",
     "tslib": "^1.9.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-language-service": "^0.9.9",
+    "webpack-env": "^0.8.0",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
@@ -80,7 +82,7 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
-    "typescript": "^3.5.1"
+    "typescript": "3.1.6"
   },
   "lint-staged": {
     "linters": {

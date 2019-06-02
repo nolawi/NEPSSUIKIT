@@ -1,7 +1,4 @@
 {
-  "typescript.allowWorkspaceTsdkPaths": true,
-  "typescript.tsdk": "./node_modules/typescript/lib",
-  "prettier.stylelintIntegration": true,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": true
@@ -20,9 +17,7 @@
     "**/node_modules/*/**": true,
     "**/dist/*/**": true,
     "**/coverage/*/**": true
-  },
+  }
   // Angular schematics
-  "ngschematics.schematics": [
-    "ng-alain"
-  ]
+
 }
