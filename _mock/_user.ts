@@ -49,21 +49,21 @@ export const USERS = {
     avatar: 'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png',
     userid: '00000001',
     email: 'cipchk@qq.com',
-    signature: '海纳百川，有容乃大',
-    title: '交互专家',
-    group: '蚂蚁金服－某某某事业群－某某平台部－某某技术部－UED',
+    signature: 'Lorem',
+    title: 'title',
+    group: 'Group',
     tags: [
       {
         key: '0',
-        label: '很有想法的',
+        label: 'test',
       },
       {
         key: '1',
-        label: '专注撩妹',
+        label: 'test',
       },
       {
         key: '2',
-        label: '帅~',
+        label: 'test~',
       },
       {
         key: '3',
@@ -75,23 +75,23 @@ export const USERS = {
       },
       {
         key: '5',
-        label: '海纳百川',
+        label: 'test',
       },
     ],
     notifyCount: 12,
-    country: 'China',
+    country: 'USA',
     geographic: {
       province: {
-        label: '上海',
+        label: 'Label',
         key: '330000',
       },
       city: {
-        label: '市辖区',
+        label: 'Label',
         key: '330100',
       },
     },
-    address: 'XX区XXX路 XX 号',
-    phone: '你猜-你猜你猜猜猜',
+    address: 'Address',
+    phone: 'Phone',
   },
   'POST /user/avatar': 'ok',
   'POST /login/account': (req: MockRequest) => {

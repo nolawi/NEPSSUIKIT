@@ -19,8 +19,6 @@ import { environment } from '@env/environment';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
-import { SettingDrawerComponent } from './setting-drawer/setting-drawer.component';
-
 @Component({
   selector: 'layout-default',
   templateUrl: './default.component.html',
@@ -76,10 +74,7 @@ export class LayoutDefaultComponent implements OnInit, AfterViewInit, OnDestroy 
   ngAfterViewInit(): void {
     // Setting componet for only developer
     if (!environment.production) {
-      setTimeout(() => {
-        const settingFactory = this.resolver.resolveComponentFactory(SettingDrawerComponent);
-        this.settingHost.createComponent(settingFactory);
-      }, 22);
+      setTimeout(() => {}, 22);
     }
   }
 
