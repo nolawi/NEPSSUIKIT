@@ -30,7 +30,6 @@ Schematic diagram of directory structure：
 ├── src
 │   ├── app
 │   │   ├── core                                # Core module
-│   │   │   ├── i18n
 │   │   │   ├── net
 │   │   │   │   └── default.interceptor.ts      # Default HTTP interceptor
 │   │   │   ├── services

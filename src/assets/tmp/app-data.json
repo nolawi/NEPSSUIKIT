@@ -1,42 +1,42 @@
 {
   "app": {
-    "name": "Alain",
-    "description": "Ng-zorro admin panel front-end framework"
+    "name": "neps",
+    "description": "scaffold"
   },
   "user": {
     "name": "Admin",
     "avatar": "./assets/tmp/img/avatar.jpg",
-    "email": "cipchk@qq.com"
+    "email": "cipchk@sec.gov"
   },
   "menu": [
     {
-      "text": "主导航",
+      "text": "main.menu",
       "i18n": "menu.main",
       "group": true,
       "hideInBreadcrumb": true,
       "children": [
         {
-          "text": "仪表盘",
+          "text": "Menu",
           "i18n": "menu.dashboard",
           "icon": "anticon-dashboard",
           "children": [
             {
-              "text": "仪表盘V1",
+              "text": "dashboardV1",
               "link": "/dashboard/v1",
               "i18n": "menu.dashboard.v1"
             },
             {
-              "text": "分析页",
+              "text": "analyis",
               "link": "/dashboard/analysis",
               "i18n": "menu.dashboard.analysis"
             },
             {
-              "text": "监控页",
+              "text": "monitor",
               "link": "/dashboard/monitor",
               "i18n": "menu.dashboard.monitor"
             },
             {
-              "text": "工作台",
+              "text": "workplace",
               "link": "/dashboard/workplace",
               "i18n": "menu.dashboard.workplace"
             }
