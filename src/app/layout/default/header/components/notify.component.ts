@@ -3,9 +3,6 @@ import * as distanceInWordsToNow from 'date-fns/distance_in_words_to_now';
 import { NzMessageService } from 'ng-zorro-antd';
 import { NoticeItem, NoticeIconList } from '@delon/abc';
 
-/**
- * 菜单通知
- */
 @Component({
   selector: 'header-notify',
   template: `
@@ -25,25 +22,25 @@ import { NoticeItem, NoticeIconList } from '@delon/abc';
 export class HeaderNotifyComponent {
   data: NoticeItem[] = [
     {
-      title: '通知',
+      title: 'Drielel',
       list: [],
-      emptyText: '你已查看所有通知',
+      emptyText: 'Lorem Ipsum',
       emptyImage: 'https://gw.alipayobjects.com/zos/rmsportal/wAhyIChODzsoKIOBHcBk.svg',
-      clearText: '清空通知',
+      clearText: 'Lorem Ipsum',
     },
     {
       title: '消息',
       list: [],
-      emptyText: '您已读完所有消息',
+      emptyText: 'Lorem Ipsum',
       emptyImage: 'https://gw.alipayobjects.com/zos/rmsportal/sAuJeJzSKbUmHfBQRzmZ.svg',
-      clearText: '清空消息',
+      clearText: 'Lorem Ipsum',
     },
     {
       title: '待办',
       list: [],
-      emptyText: '你已完成所有待办',
+      emptyText: 'Lorem Ipsum',
       emptyImage: 'https://gw.alipayobjects.com/zos/rmsportal/HsIsxMZiWKrNUavQUXqx.svg',
-      clearText: '清空待办',
+      clearText: 'Lorem Ipsum',
     },
   ];
   count = 5;
@@ -58,6 +55,7 @@ export class HeaderNotifyComponent {
     notices.forEach(item => {
       const newItem = { ...item };
       if (newItem.datetime)
+        // tslint:disable-next-line: no-non-null-assertion
         newItem.datetime = distanceInWordsToNow(item.datetime!, {
           locale: (window as any).__locale__,
         });
@@ -69,6 +67,7 @@ export class HeaderNotifyComponent {
           doing: 'gold',
         }[newItem.status];
       }
+      // tslint:disable-next-line: no-non-null-assertion
       data.find(w => w.title === newItem.type)!.list.push(newItem);
     });
     return data;
@@ -82,94 +81,94 @@ export class HeaderNotifyComponent {
         {
           id: '000000001',
           avatar: 'https://gw.alipayobjects.com/zos/rmsportal/ThXAXghbEsBCCSDihZxY.png',
-          title: '你收到了 14 份新周报',
+          title: 'lkjdf',
           datetime: '2017-08-09',
           type: '通知',
         },
         {
           id: '000000002',
           avatar: 'https://gw.alipayobjects.com/zos/rmsportal/OKJXDXrmkNshAMvwtvhu.png',
-          title: '你推荐的 曲妮妮 已通过第三轮面试',
+          title: 'More',
           datetime: '2017-08-08',
-          type: '通知',
+          type: 'l;kadjsf',
         },
         {
           id: '000000003',
           avatar: 'https://gw.alipayobjects.com/zos/rmsportal/kISTdvpyTAhtGxpovNWd.png',
-          title: '这种模板可以区分多种通知类型',
+          title: 'Lorem',
           datetime: '2017-08-07',
           read: true,
-          type: '通知',
+          type: 'lorem',
         },
         {
           id: '000000004',
           avatar: 'https://gw.alipayobjects.com/zos/rmsportal/GvqBnKhFgObvnSGkDsje.png',
-          title: '左侧图标用于区分不同的类型',
+          title: 'lorem',
           datetime: '2017-08-07',
-          type: '通知',
+          type: 'lorem',
         },
         {
           id: '000000005',
           avatar: 'https://gw.alipayobjects.com/zos/rmsportal/ThXAXghbEsBCCSDihZxY.png',
-          title: '内容不要超过两行字，超出时自动截断',
+          title: 'lorem',
           datetime: '2017-08-07',
           type: '通知',
         },
         {
           id: '000000006',
           avatar: 'https://gw.alipayobjects.com/zos/rmsportal/fcHMVNCjPOsbUGdEduuv.jpeg',
-          title: '曲丽丽 评论了你',
-          description: '描述信息描述信息描述信息',
+          title: 'lorem lorem',
+          description: 'lorem',
           datetime: '2017-08-07',
-          type: '消息',
+          type: 'lorem',
         },
         {
           id: '000000007',
           avatar: 'https://gw.alipayobjects.com/zos/rmsportal/fcHMVNCjPOsbUGdEduuv.jpeg',
-          title: '朱偏右 回复了你',
-          description: '这种模板用于提醒谁与你发生了互动，左侧放『谁』的头像',
+          title: 'lorem ipsume',
+          description: 'What is going on ?',
           datetime: '2017-08-07',
-          type: '消息',
+          type: 'Sup',
         },
         {
           id: '000000008',
           avatar: 'https://gw.alipayobjects.com/zos/rmsportal/fcHMVNCjPOsbUGdEduuv.jpeg',
-          title: '标题',
-          description: '这种模板用于提醒谁与你发生了互动，左侧放『谁』的头像',
+          title: 'Message',
+          description: 'Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum',
           datetime: '2017-08-07',
-          type: '消息',
+          type: 'Was',
         },
         {
           id: '000000009',
-          title: '任务名称',
-          description: '任务需要在 2017-01-12 20:00 前启动',
-          extra: '未开始',
+          title: 'Washington',
+          description: 'This is a description',
+          extra: 'Okek',
           status: 'todo',
-          type: '待办',
+          type: 'datee',
         },
         {
           id: '000000010',
-          title: '第三方紧急代码变更',
-          description: '冠霖提交于 2017-01-06，需在 2017-01-07 前完成代码变更任务',
-          extra: '马上到期',
+          title: 'Of cource',
+          description: 'Text',
+          extra: 'Lorem Ip',
           status: 'urgent',
-          type: '待办',
+          type: 'IP',
         },
         {
           id: '000000011',
-          title: '信息安全考试',
-          description: '指派竹尔于 2017-01-09 前完成更新并发布',
-          extra: '已耗时 8 天',
+          title: 'WElsxjd',
+          description: 'Drive',
+          extra: 'MOre',
           status: 'doing',
-          type: '待办',
+          type: 'OUU',
         },
         {
           id: '000000012',
           title: 'ABCD 版本发布',
-          description: '冠霖提交于 2017-01-06，需在 2017-01-07 前完成代码变更任务',
-          extra: '进行中',
+          description: 'Driping',
+          extra: 'coffee',
           status: 'processing',
-          type: '待办',
+          type: 'andj',
         },
       ]);
       this.loading = false;
@@ -178,10 +177,10 @@ export class HeaderNotifyComponent {
   }
 
   clear(type: string) {
-    this.msg.success(`清空了 ${type}`);
+    this.msg.success(`Empty ${type}`);
   }
 
   select(res: any) {
-    this.msg.success(`点击了 ${res.title} 的 ${res.item.title}`);
+    this.msg.success(`Click ${res.title} 的 ${res.item.title}`);
   }
 }
