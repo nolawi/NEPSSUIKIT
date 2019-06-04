@@ -10,7 +10,6 @@ Components  `components`
 `header-fullscreen` | fullscreen
 `header-icon` | icon
 `header-langs` | lang
-`header-notify` | notify
 `header-search` | searxh
 `header-storage` |  LocalStorage 
 `header-task` | task

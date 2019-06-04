@@ -31,6 +31,7 @@ export class LayoutDefaultComponent implements OnInit, AfterViewInit, OnDestroy 
 
   constructor(
     router: Router,
+    // tslint:disable-next-line: variable-name
     _message: NzMessageService,
     private resolver: ComponentFactoryResolver,
     private settings: SettingsService,
@@ -80,7 +81,6 @@ export class LayoutDefaultComponent implements OnInit, AfterViewInit, OnDestroy 
 
   ngOnInit() {
     const { settings, unsubscribe$ } = this;
-    settings.notify.pipe(takeUntil(unsubscribe$)).subscribe(() => this.setClass());
     this.setClass();
   }
 

@@ -22,6 +22,7 @@ for (let i = 0; i < total; i += 1) {
 
 function genData(params: any) {
   let ret = [...list];
+  // tslint:disable-next-line: one-variable-per-declaration
   const pi = +params.pi,
     ps = +params.ps,
     start = (pi - 1) * ps;
