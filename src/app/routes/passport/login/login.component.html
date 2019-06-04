@@ -23,18 +23,15 @@
         </nz-form-control>
       </nz-form-item>
     </nz-tab>
-    <nz-tab [nzTitle]="'Mobile number'">
+    <nz-tab [nzTitle]="'Other Login'">
       <nz-form-item>
         <nz-form-control>
           <nz-input-group nzSize="large" nzPrefixIcon="user">
-            <input nz-input formControlName="mobile" placeholder="mobile number" />
+            <input nz-input formControlName="mobile" placeholder="pin" />
           </nz-input-group>
           <nz-form-explain *ngIf="mobile.dirty && mobile.errors">
-            <ng-container *ngIf="mobile.errors.required">
-              Please enter your phone number!
-            </ng-container>
-            <ng-container *ngIf="mobile.errors.pattern">
-              Malformed phone number!
+            <ng-container>
+              Please enter your pin!
             </ng-container>
           </nz-form-explain>
         </nz-form-control>
@@ -51,15 +48,8 @@
               </nz-form-explain>
             </nz-col>
             <nz-col [nzSpan]="8">
-              <button
-                type="button"
-                nz-button
-                nzSize="large"
-                (click)="getCaptcha()"
-                [disabled]="count"
-                nzBlock
-                [nzLoading]="http.loading"
-              >
+              <button type="button" nz-button nzSize="large" (click)="getCaptcha()" [disabled]="count" nzBlock
+                [nzLoading]="http.loading">
                 {{ count ? count + 's' : ('Get code') }}
               </button>
             </nz-col>
@@ -84,13 +74,8 @@
 </form>
 <div class="other">
   Sign in with
-  <i
-    nz-tooltip="in fact Auth0 via window"
-    (click)="open('auth0', 'window')"
-    nz-icon
-    nzType="alipay-circle"
-    class="icon"
-  ></i>
+  <i nz-tooltip="in fact Auth0 via window" (click)="open('auth0', 'window')" nz-icon nzType="alipay-circle"
+    class="icon"></i>
   <i nz-tooltip="in fact Github via redirect" (click)="open('github')" nz-icon nzType="taobao-circle" class="icon"></i>
   <i (click)="open('weibo', 'window')" nz-icon nzType="weibo-circle" class="icon"></i>
   <a class="register" routerLink="/passport/register">Sign up</a>

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const fs = require('fs');
 const path = require('path');
 const {
@@ -34,9 +35,11 @@ genVarFile();
 generateTheme(options)
   .then(() => {
     removeVarFile();
+    // eslint-disable-next-line no-console
     console.log('Theme generated successfully');
   })
   .catch(error => {
     removeVarFile();
+    // eslint-disable-next-line no-console
     console.log('Error', error);
   });

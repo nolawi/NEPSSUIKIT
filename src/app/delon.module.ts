@@ -1,6 +1,5 @@
 /**
- * 进一步对基础模块的导入提炼
- * 有关模块注册指导原则请参考：https://github.com/ng-alain/ng-alain/issues/180
+ * ：https://github.com/ng-alain/ng-alain/issues/180
  */
 import { NgModule, Optional, SkipSelf, ModuleWithProviders } from '@angular/core';
 import { throwIfAlreadyLoaded } from '@core';
@@ -16,9 +15,9 @@ const MOCK_MODULES = !environment.production ? [DelonMockModule.forRoot({ data: 
 
 // #region reuse-tab
 /**
- * 若需要[路由复用](https://ng-alain.com/components/reuse-tab)需要：
- * 1、增加 `REUSETAB_PROVIDES`
- * 2、在 `src/app/layout/default/default.component.html` 修改：
+ * [Reuse-tab](https://ng-alain.com/components/reuse-tab)：
+ * 1、 `REUSETAB_PROVIDES`
+ * 2、 `src/app/layout/default/default.component.html` ：
  *  ```html
  *  <section class="alain-default__content">
  *    <reuse-tab></reuse-tab>
@@ -65,7 +64,7 @@ export function fnSTConfig(): STConfig {
 }
 
 const GLOBAL_CONFIG_PROVIDES = [
-  // TIPS：@delon/abc 有大量的全局配置信息，例如设置所有 `st` 的页码默认为 `20` 行
+  // TIPS：@delon/abc
   { provide: STConfig, useFactory: fnSTConfig },
   { provide: PageHeaderConfig, useFactory: fnPageHeaderConfig },
   { provide: DelonAuthConfig, useFactory: fnDelonAuthConfig },

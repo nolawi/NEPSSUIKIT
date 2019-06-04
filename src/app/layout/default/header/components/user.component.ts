@@ -43,6 +43,7 @@ export class HeaderUserComponent {
 
   logout() {
     this.tokenService.clear();
+    // tslint:disable-next-line: no-non-null-assertion
     this.router.navigateByUrl(this.tokenService.login_url!);
   }
 }

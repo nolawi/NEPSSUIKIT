@@ -8,14 +8,10 @@ for (let i = 0; i < total; i += 1) {
     id: i + 1,
     disabled: i % 6 === 0,
     href: 'https://ant.design',
-    avatar: [
-      'https://gw.alipayobjects.com/zos/rmsportal/eeHMaZBwmTvLdIwMfBpg.png',
-      'https://gw.alipayobjects.com/zos/rmsportal/udxAbMEhpwthVVcjLXik.png',
-    ][i % 2],
     no: `TradeCode ${i}`,
-    title: `一个任务名称 ${i}`,
-    owner: '曲丽丽',
-    description: '这是一段描述',
+    title: `-task name ${i}`,
+    owner: 'Pryamid Solutions',
+    description: 'This is description',
     callNo: Math.floor(Math.random() * 1000),
     status: Math.floor(Math.random() * 10) % 4,
     updatedAt: new Date(`2017-07-${Math.floor(i / 2) + 1}`),
@@ -26,6 +22,7 @@ for (let i = 0; i < total; i += 1) {
 
 function genData(params: any) {
   let ret = [...list];
+  // tslint:disable-next-line: one-variable-per-declaration
   const pi = +params.pi,
     ps = +params.ps,
     start = (pi - 1) * ps;
@@ -53,21 +50,21 @@ export const USERS = {
     avatar: 'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png',
     userid: '00000001',
     email: 'cipchk@qq.com',
-    signature: '海纳百川，有容乃大',
-    title: '交互专家',
-    group: '蚂蚁金服－某某某事业群－某某平台部－某某技术部－UED',
+    signature: 'Lorem',
+    title: 'title',
+    group: 'Group',
     tags: [
       {
         key: '0',
-        label: '很有想法的',
+        label: 'test',
       },
       {
         key: '1',
-        label: '专注撩妹',
+        label: 'test',
       },
       {
         key: '2',
-        label: '帅~',
+        label: 'test~',
       },
       {
         key: '3',
@@ -79,23 +76,23 @@ export const USERS = {
       },
       {
         key: '5',
-        label: '海纳百川',
+        label: 'test',
       },
     ],
     notifyCount: 12,
-    country: 'China',
+    country: 'USA',
     geographic: {
       province: {
-        label: '上海',
+        label: 'Label',
         key: '330000',
       },
       city: {
-        label: '市辖区',
+        label: 'Label',
         key: '330100',
       },
     },
-    address: 'XX区XXX路 XX 号',
-    phone: '你猜-你猜你猜猜猜',
+    address: 'Address',
+    phone: 'Phone',
   },
   'POST /user/avatar': 'ok',
   'POST /login/account': (req: MockRequest) => {

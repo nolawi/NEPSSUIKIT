@@ -10,7 +10,9 @@ import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/
         </nz-badge>
       </div>
       <div nz-menu class="wd-lg">
-        <div *ngIf="loading" class="mx-lg p-lg"><nz-spin></nz-spin></div>
+        <div *ngIf="loading" class="mx-lg p-lg">
+          <nz-spin></nz-spin>
+        </div>
         <nz-card *ngIf="!loading" nzTitle="Notifications" nzBordered="false" class="ant-card__body-nopadding">
           <ng-template #extra><i nz-icon nzType="plus"></i></ng-template>
           <div
@@ -24,7 +26,7 @@ import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/
               <nz-avatar [nzSrc]="'./assets/tmp/img/1.png'"></nz-avatar>
             </div>
             <div nz-col [nzSpan]="20">
-              <strong>cipchk</strong>
+              <strong>User</strong>
               <p class="mb0">Please tell me what happened in a few words, don't go into details.</p>
             </div>
           </div>
@@ -39,8 +41,8 @@ import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/
               <nz-avatar [nzSrc]="'./assets/tmp/img/2.png'"></nz-avatar>
             </div>
             <div nz-col [nzSpan]="20">
-              <strong>はなさき</strong>
-              <p class="mb0">ハルカソラトキヘダツヒカリ</p>
+              <strong>Another</strong>
+              <p class="mb0">Lorem ipsum dolor sit amet consectetur adipisicing elit. !</p>
             </div>
           </div>
           <div
@@ -54,8 +56,8 @@ import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/
               <nz-avatar [nzSrc]="'./assets/tmp/img/3.png'"></nz-avatar>
             </div>
             <div nz-col [nzSpan]="20">
-              <strong>苏先生</strong>
-              <p class="mb0">请告诉我，我应该说点什么好？</p>
+              <strong>Lorem cing elit. ad laborum?</strong>
+              <p class="mb0">consectetur adipisicing elit.？</p>
             </div>
           </div>
           <div
