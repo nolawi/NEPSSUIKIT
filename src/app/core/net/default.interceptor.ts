@@ -67,7 +67,7 @@ export class DefaultInterceptor implements HttpInterceptor {
       case 200:
         break;
       case 401:
-        this.notification.error(`未登录或登录已过期，请重新登录。`, ``);
+        this.notification.error(`Lorem Ipsi`, ``);
         (this.injector.get(DA_SERVICE_TOKEN) as ITokenService).clear();
         this.goTo('/passport/login');
         break;
@@ -78,7 +78,7 @@ export class DefaultInterceptor implements HttpInterceptor {
         break;
       default:
         if (ev instanceof HttpErrorResponse) {
-          console.warn('未可知错误，大部分是由于后端不支持CORS或无效配置引起', ev);
+          console.warn('CORS or invalid configuration i think ', ev);
           return throwError(ev);
         }
         break;
