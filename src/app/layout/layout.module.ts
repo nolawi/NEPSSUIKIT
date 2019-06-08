@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { SharedModule } from '@shared';
 
-import { LayoutDefaultComponent } from './default/default.component';
+import { LayoutDefaultComponent } from './global/default.component';
 import { LayoutFullScreenComponent } from './fullscreen/fullscreen.component';
-import { HeaderComponent } from './default/header/header.component';
-import { SidebarComponent } from './default/sidebar/sidebar.component';
-import { HeaderSearchComponent } from './default/header/components/search.component';
-import { HeaderTaskComponent } from './default/header/components/task.component';
-import { HeaderIconComponent } from './default/header/components/icon.component';
-import { HeaderFullScreenComponent } from './default/header/components/fullscreen.component';
-import { HeaderStorageComponent } from './default/header/components/storage.component';
-import { HeaderUserComponent } from './default/header/components/user.component';
+import { HeaderComponent } from './global/header/header.component';
+import { SidebarComponent } from './global/sidebar/sidebar.component';
+import { HeaderSearchComponent } from './global/header/components/search.component';
+import { HeaderTaskComponent } from './global/header/components/task.component';
+import { HeaderIconComponent } from './global/header/components/icon.component';
+import { HeaderFullScreenComponent } from './global/header/components/fullscreen.component';
+import { HeaderStorageComponent } from './global/header/components/storage.component';
+import { HeaderUserComponent } from './global/header/components/user.component';
 
 const COMPONENTS = [LayoutDefaultComponent, LayoutFullScreenComponent, HeaderComponent, SidebarComponent];
 const HEADERCOMPONENTS = [
