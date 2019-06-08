@@ -7,7 +7,7 @@ for (let i = 0; i < total; i += 1) {
   list.push({
     id: i + 1,
     disabled: i % 6 === 0,
-    href: 'https://ant.design',
+    href: 'https:/sec.gov',
     no: `TradeCode ${i}`,
     title: `-task name ${i}`,
     owner: 'Pryamid Solutions',
@@ -46,10 +46,9 @@ export const USERS = {
   '/user/:id': (req: MockRequest) => list.find(w => w.id === +req.params.id),
   'POST /user/:id': (req: MockRequest) => saveData(+req.params.id, req.body),
   '/user/current': {
-    name: 'Cipchk',
-    avatar: 'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png',
+    name: 'Examiner',
     userid: '00000001',
-    email: 'cipchk@qq.com',
+    email: 'info@sec.got',
     signature: 'Lorem',
     title: 'title',
     group: 'Group',
@@ -68,11 +67,11 @@ export const USERS = {
       },
       {
         key: '3',
-        label: '通吃',
+        label: 'test',
       },
       {
         key: '4',
-        label: '专职后端',
+        label: 'test',
       },
       {
         key: '5',
@@ -97,15 +96,15 @@ export const USERS = {
   'POST /user/avatar': 'ok',
   'POST /login/account': (req: MockRequest) => {
     const data = req.body;
-    if (!(data.userName === 'admin' || data.userName === 'user') || data.password !== 'ng-alain.com') {
-      return { msg: `Invalid username or password（admin/ng-alain.com）` };
+    if (!(data.userName === 'admin' || data.userName === 'user') || data.password !== 'psi') {
+      return { msg: `Invalid username or password（admin/psi）` };
     }
     return {
       msg: 'ok',
       user: {
         token: '123456789',
         name: data.userName,
-        email: `${data.userName}@qq.com`,
+        email: `${data.userName}@sec.gov`,
         id: 10000,
         time: +new Date(),
       },
