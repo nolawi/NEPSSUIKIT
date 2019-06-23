@@ -4,11 +4,6 @@ import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/
   selector: 'header-task',
   template: `
     <nz-dropdown nzTrigger="click" nzPlacement="bottomRight" (nzVisibleChange)="change()">
-      <div class="alain-default__nav-item" nz-dropdown>
-        <nz-badge [nzDot]="true">
-          <i nz-icon nzType="bell" class="alain-default__nav-item-icon"></i>
-        </nz-badge>
-      </div>
       <div nz-menu class="wd-lg">
         <div *ngIf="loading" class="mx-lg p-lg">
           <nz-spin></nz-spin>

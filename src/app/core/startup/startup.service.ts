@@ -39,15 +39,14 @@ export class StartupService {
         ([appData]) => {
           // application data
           const res: any = appData;
-          // 应用信息：包括站点名、描述、年份
+
           this.settingService.setApp(res.app);
-          // 用户信息：包括姓名、头像、邮箱地址
+
           this.settingService.setUser(res.user);
-          // ACL：设置权限为全量
+
           this.aclService.setFull(true);
-          // 初始化菜单
+
           this.menuService.add(res.menu);
-          // 设置页面标题的后缀
           this.titleService.suffix = res.app.name;
         },
         () => {},
@@ -66,22 +65,21 @@ export class StartupService {
     // }
     // mock
     const app: any = {
-      name: `ng-alain`,
-      description: `Ng-zorro admin panel front-end framework`,
+      name: `Trends`,
+      description: `Trends Dashboard Prototype`,
     };
     const user: any = {
-      name: 'Admin',
-      avatar: './assets/tmp/img/avatar.jpg',
-      email: 'cipchk@qq.com',
+      name: 'Examiner',
+      email: 'ex@sec.gov',
       token: '123456789',
     };
-    // 应用信息：包括站点名、描述、年份
+
     this.settingService.setApp(app);
-    // 用户信息：包括姓名、头像、邮箱地址
+
     this.settingService.setUser(user);
-    // ACL：设置权限为全量
+
     this.aclService.setFull(true);
-    // 初始化菜单
+
     this.menuService.add([
       {
         text: 'Menu',
@@ -92,15 +90,9 @@ export class StartupService {
             link: '/dashboard',
             icon: { type: 'icon', value: 'appstore' },
           },
-          {
-            text: 'Other',
-            icon: { type: 'icon', value: 'rocket' },
-            shortcutRoot: true,
-          },
         ],
       },
     ]);
-    // 设置页面标题的后缀
     this.titleService.suffix = app.name;
 
     resolve({});
