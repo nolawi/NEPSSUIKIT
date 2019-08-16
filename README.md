@@ -1,20 +1,7 @@
 
 # NPSSUIKIT
 
-## Links
 
-+ [Document]()
-+ [DEMO])
-
-## Features
-
-+ `ng-zorro-antd` based
-+ Responsive Layout
-+ [@delon](https://github.com/ng-alain/delon)
-+ Lazy load Assets
-+ UI Router States
-+ Customize Theme
-+ Less preprocessor
 
 # NEPSUIKIT
 
@@ -29,22 +16,6 @@ Schematic diagram of directory structure：
 ├── _mock                                       # Mock Data rule
 ├── src
 │   ├── app
-│   │   ├── core                                # Core module
-│   │   │   ├── net
-│   │   │   │   └── default.interceptor.ts      # Default HTTP interceptor
-│   │   │   ├── services
-│   │   │   │   └── startup.service.ts          # Initialize project configuration
-│   │   │   └── core.module.ts                  # Core module file
-│   │   ├── layout                              # Core layout
-│   │   ├── routes
-│   │   │   ├── **                              # Business directory
-│   │   │   ├── routes.module.ts                # Service routing module
-│   │   │   └── routes-routing.module.ts        # Service routes registration
-│   │   ├── shared                              # Shared module
-│   │   │   └── shared.module.ts                # Shared module file
-│   │   ├── app.component.ts                    # Root component
-│   │   └── app.module.ts                       # Root module
-│   │   └── delon.module.ts                     # @delon module import
 │   ├── assets                                  # Local static resource
 │   ├── environments                            # Environment variable configuration
 │   ├── styles                                  # Style directory
