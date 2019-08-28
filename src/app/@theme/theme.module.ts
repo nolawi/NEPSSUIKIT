@@ -58,7 +58,7 @@ export class ThemeModule {
       providers: [
         ...NbThemeModule.forRoot(
           {
-            name: 'default',
+            name: 'neptheme',
           },
           [DEFAULT_THEME],
         ).providers,
