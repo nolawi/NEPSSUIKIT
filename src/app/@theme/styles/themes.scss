@@ -3,86 +3,73 @@
 // @nebular out of the box themes
 @import '~@nebular/theme/styles/themes';
 
-$nb-themes: nb-register-theme((
-  layout-padding-top: 2.25rem,
+// Nep UI Theme
+$nb-themes: nb-register-theme((color-primary-100: #DEEBF6,
+    color-primary-200: #BED6EE,
+    color-primary-300: #8FABCC,
+    color-primary-400: #607899,
+    color-primary-500: #2B3B55,
+    color-primary-600: #1F2D49,
+    color-primary-700: #15213D,
+    color-primary-800: #0D1731,
+    color-primary-900: #080F28,
+    color-success-100: #CCFAD5,
+    color-success-200: #9CF6B5,
+    color-success-300: #67E497,
+    color-success-400: #40CA82,
+    color-success-500: #0fa767,
+    color-success-600: #0A8F64,
+    color-success-700: #07785F,
+    color-success-800: #046055,
+    color-success-900: #02504E,
+    color-info-100: #D7EAFB,
+    color-info-200: #B0D3F8,
+    color-info-300: #85B2EB,
+    color-info-400: #6392D7,
+    color-info-500: #3567bd,
+    color-info-600: #264FA2,
+    color-info-700: #1A3A88,
+    color-info-800: #10286D,
+    color-info-900: #0A1B5A,
 
-  menu-item-icon-margin: 0 0.5rem 0 0,
 
-  card-height-tiny: 13.5rem,
-  card-height-small: 21.1875rem,
-  card-height-medium: 28.875rem,
-  card-height-large: 36.5625rem,
-  card-height-giant: 44.25rem,
-  card-margin-bottom: 1.875rem,
-  card-header-with-select-padding-top: 0.5rem,
-  card-header-with-select-padding-bottom: 0.5rem,
+    color-warning-100: #FEF2CE,
+    color-warning-200: #FEE29D,
+    color-warning-300: #FECD6C,
+    color-warning-400: #FDB848,
+    color-warning-500: #fc970c,
+    color-warning-600: #D87808,
+    color-warning-700: #B55C06,
+    color-warning-800: #924403,
+    color-warning-900: #783202,
+    color-danger-100: #FDE4D6,
+    color-danger-200: #FBC4AE,
+    color-danger-300: #F39A83,
+    color-danger-400: #E77262,
+    color-danger-500: #d83933,
+    color-danger-600: #B9252C,
+    color-danger-700: #9B192A,
+    color-danger-800: #7D1027,
+    color-danger-900: #670926,
 
-  select-min-width: 6rem,
+    color-basic-900: #2B3B55,
 
-  slide-out-background: #f7f9fc,
-  slide-out-shadow-color: 0 4px 14px 0 #8f9bb3,
-  slide-out-shadow-color-rtl: 0 4px 14px 0 #8f9bb3,
-), default, default);
+    layout-padding-top: 2.5rem,
 
-$nb-themes: nb-register-theme((
-  layout-padding-top: 2.25rem,
+    menu-item-icon-margin: 0 0.5rem 0 0,
 
-  menu-item-icon-margin: 0 0.5rem 0 0,
+    card-height-tiny: 13.5rem,
+    card-height-small: 21.1875rem,
+    card-height-medium: 28.875rem,
+    card-height-large: 36.5625rem,
+    card-height-giant: 44.25rem,
+    card-margin-bottom: 1.875rem,
+    card-header-with-select-padding-top: 0.5rem,
+    card-header-with-select-padding-bottom: 0.5rem,
 
-  card-height-tiny: 13.5rem,
-  card-height-small: 21.1875rem,
-  card-height-medium: 28.875rem,
-  card-height-large: 36.5625rem,
-  card-height-giant: 44.25rem,
-  card-margin-bottom: 1.875rem,
-  card-header-with-select-padding-top: 0.5rem,
-  card-header-with-select-padding-bottom: 0.5rem,
+    select-min-width: 6rem,
 
-  select-min-width: 6rem,
-
-  slide-out-background: #252547,
-  slide-out-shadow-color: 2px 0 3px #29157a,
-  slide-out-shadow-color-rtl: -2px 0 3px #29157a,
-), cosmic, cosmic);
-
-$nb-themes: nb-register-theme((
-  layout-padding-top: 2.25rem,
-
-  menu-item-icon-margin: 0 0.5rem 0 0,
-
-  card-height-tiny: 13.5rem,
-  card-height-small: 21.1875rem,
-  card-height-medium: 28.875rem,
-  card-height-large: 36.5625rem,
-  card-height-giant: 44.25rem,
-  card-margin-bottom: 1.875rem,
-  card-header-with-select-padding-top: 0.5rem,
-  card-header-with-select-padding-bottom: 0.5rem,
-
-  select-min-width: 6rem,
-
-  slide-out-background: linear-gradient(270deg, #edf1f7 0%, #e4e9f2 100%),
-  slide-out-shadow-color: 0 4px 14px 0 #8f9bb3,
-  slide-out-shadow-color-rtl: 0 4px 14px 0 #8f9bb3,
-), corporate, corporate);
-
-$nb-themes: nb-register-theme((
-  layout-padding-top: 2.25rem,
-
-  menu-item-icon-margin: 0 0.5rem 0 0,
-
-  card-height-tiny: 13.5rem,
-  card-height-small: 21.1875rem,
-  card-height-medium: 28.875rem,
-  card-height-large: 36.5625rem,
-  card-height-giant: 44.25rem,
-  card-margin-bottom: 1.875rem,
-  card-header-with-select-padding-top: 0.5rem,
-  card-header-with-select-padding-bottom: 0.5rem,
-
-  select-min-width: 6rem,
-
-  slide-out-background: linear-gradient(270deg, #222b45 0%, #151a30 100%),
-  slide-out-shadow-color: 0 4px 14px 0 #8f9bb3,
-  slide-out-shadow-color-rtl: 0 4px 14px 0 #8f9bb3,
-), dark, dark);
+    slide-out-background: #f7f9fc,
+    slide-out-shadow-color: 0 4px 14px 0 #fff,
+    slide-out-shadow-color-rtl: 0 4px 14px 0 #fff,
+  ), neptheme, default);
