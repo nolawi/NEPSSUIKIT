@@ -1,6 +1,5 @@
 import { Component, HostBinding, OnDestroy } from '@angular/core';
 import { NbThemeService, NbMediaBreakpoint, NbMediaBreakpointsService } from '@nebular/theme';
-import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'ngx-rooms',

@@ -8,7 +8,7 @@ describe('E2jGridComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ E2jGridComponent ]
+      declarations: [ E2jGridComponent ],
     })
     .compileComponents();
   }));
