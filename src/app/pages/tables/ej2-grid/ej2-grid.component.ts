@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { GridModule, PagerModule } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   selector: 'ngx-ej2-grid',
