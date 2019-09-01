@@ -156,6 +156,10 @@ export const MENU_ITEMS: NbMenuItem[] = [
         title: 'Tree Grid',
         link: '/pages/tables/tree-grid',
       },
+      {
+        title: 'Syncfusion Table',
+        link: '/pages/tables/e2j-grid',
+      },
     ],
   },
   {

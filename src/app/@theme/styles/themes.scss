@@ -1,7 +1,8 @@
 // @nebular theming framework
 @import '~@nebular/theme/styles/theming';
 // @nebular out of the box themes
-@import '~@nebular/theme/styles/themes';
+@import '~@nebular/theme/styles/themes/default';
+
 
 // Nep UI Theme
 $nb-themes: nb-register-theme((color-primary-100: #DEEBF6,
@@ -66,10 +67,25 @@ $nb-themes: nb-register-theme((color-primary-100: #DEEBF6,
     card-margin-bottom: 1.875rem,
     card-header-with-select-padding-top: 0.5rem,
     card-header-with-select-padding-bottom: 0.5rem,
-
     select-min-width: 6rem,
-
     slide-out-background: #f7f9fc,
     slide-out-shadow-color: 0 4px 14px 0 #fff,
     slide-out-shadow-color-rtl: 0 4px 14px 0 #fff,
+
+
   ), neptheme, default);
+
+// Nep UI Theme
+$nb-themes: nb-register-theme((layout-padding-top: 2.5rem,
+
+    menu-item-icon-margin: 0 0.5rem 0 0,
+
+
+    card-header-with-select-padding-top: 0.5rem,
+    card-header-with-select-padding-bottom: 0.5rem,
+    select-min-width: 6rem,
+    slide-out-background: #f7f9fc,
+    slide-out-shadow-color: 0 4px 14px 0 #fff,
+    slide-out-shadow-color-rtl: 0 4px 14px 0 #fff,
+
+  ), default, default);
