@@ -158,7 +158,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
       {
         title: 'Syncfusion Table',
-        link: '/pages/tables/e2j-grid',
+        link: '/pages/tables/ej2-grid',
       },
     ],
   },
