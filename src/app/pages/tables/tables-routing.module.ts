@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { TablesComponent } from './tables.component';
 import { SmartTableComponent } from './smart-table/smart-table.component';
 import { TreeGridComponent } from './tree-grid/tree-grid.component';
-import { E2jGridComponent } from './e2j-grid/e2j-grid.component';
+import { Ej2GridComponent } from './ej2-grid/ej2-grid.component';
 
 const routes: Routes = [
   {
@@ -20,8 +20,8 @@ const routes: Routes = [
         component: TreeGridComponent,
       },
       {
-        path: 'e2j-grid',
-        component: E2jGridComponent,
+        path: 'ej2-grid',
+        component: Ej2GridComponent,
       },
     ],
   },
@@ -33,4 +33,4 @@ const routes: Routes = [
 })
 export class TablesRoutingModule {}
 
-export const routedComponents = [TablesComponent, SmartTableComponent, TreeGridComponent, E2jGridComponent];
+export const routedComponents = [TablesComponent, SmartTableComponent, TreeGridComponent, Ej2GridComponent];

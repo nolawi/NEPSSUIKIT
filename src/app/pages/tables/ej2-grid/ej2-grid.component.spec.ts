@@ -1,20 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { E2jGridComponent } from './e2j-grid.component';
+import { Ej2GridComponent } from './ej2-grid.component';
 
-describe('E2jGridComponent', () => {
-  let component: E2jGridComponent;
-  let fixture: ComponentFixture<E2jGridComponent>;
+describe('Ej2GridComponent', () => {
+  let component: Ej2GridComponent;
+  let fixture: ComponentFixture<Ej2GridComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ E2jGridComponent ],
-    })
-    .compileComponents();
+      declarations: [Ej2GridComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(E2jGridComponent);
+    fixture = TestBed.createComponent(Ej2GridComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

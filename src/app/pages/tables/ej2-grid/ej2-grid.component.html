@@ -1,0 +1,16 @@
+<nb-card>
+  <nb-card-header>
+    EJ2 Data Grid
+  </nb-card-header>
+
+  <nb-card-body>
+    <ejs-grid [dataSource]='data' rowHeight='38' [allowSelection]='true' [allowSorting]='true'>
+      <e-columns>
+        <e-column field='OrderID' headerText='Order ID' width=90></e-column>
+        <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+        <e-column field='Freight' headerText='Freight' format='C2' width=90></e-column>
+        <e-column field='OrderDate' headerText='Order Date' format='yMd' width=120></e-column>
+      </e-columns>
+    </ejs-grid>
+  </nb-card-body>
+</nb-card>

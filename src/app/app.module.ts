@@ -6,6 +6,7 @@ import { CoreModule } from './@core/core.module';
 import { ThemeModule } from './@theme/theme.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { GridModule, PagerModule } from '@syncfusion/ej2-angular-grids';
 import {
   NbChatModule,
   NbDatepickerModule,
@@ -15,6 +16,7 @@ import {
   NbToastrModule,
   NbWindowModule,
 } from '@nebular/theme';
+import { Ej2GridModule } from './pages/tables/ej2-grid/ej2-grid.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,6 +24,8 @@ import {
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    GridModule,
+    PagerModule,
     AppRoutingModule,
     ThemeModule.forRoot(),
     NbSidebarModule.forRoot(),
@@ -34,6 +38,7 @@ import {
       messageGoogleMapKey: 'AIzaSyA_wNuCzia92MAmdLRzmqitRGvCF7wCZPY',
     }),
     CoreModule.forRoot(),
+    Ej2GridModule,
   ],
   bootstrap: [AppComponent],
 })
