@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { data } from './dataSample';
 
 @Component({
   selector: 'ngx-ej2-grid',
@@ -8,5 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class Ej2GridComponent implements OnInit {
   constructor() {}
 
-  ngOnInit() {}
+  public data: object[];
+
+  ngOnInit(): void {
+    this.data = data;
+  }
 }
