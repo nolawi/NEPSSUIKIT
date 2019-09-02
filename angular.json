@@ -41,6 +41,7 @@
               "src/app/@theme/styles/styles.scss",
               "node_modules/@nebular/theme/styles/prebuilt/default.css",
              "node_modules/@syncfusion/ej2-bootstrap-theme/styles/bootstrap.css"
+            
             ],
             "scripts": [
               "node_modules/pace-js/pace.min.js",
