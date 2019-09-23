@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { AnalyticsService } from './@core/utils/analytics.service';
-import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'ngx-app',
