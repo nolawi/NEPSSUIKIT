@@ -4,12 +4,29 @@
   </nb-card-header>
 
   <nb-card-body>
-    <ejs-grid [dataSource]='data' rowHeight='38' [allowSelection]='true' [allowSorting]='true'>
+    <ejs-grid [dataSource]='data' rowHeight='38' [allowSelection]='true' [allowSorting]='true' [childGrid]='childGrid'
+      [allowSorting]='true' [allowFiltering]='true'>
       <e-columns>
         <e-column field='OrderID' headerText='Order ID' width=90></e-column>
         <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
         <e-column field='Freight' headerText='Freight' format='C2' width=90></e-column>
         <e-column field='OrderDate' headerText='Order Date' format='yMd' width=120></e-column>
+        <e-column field='OrderID' headerText='Order ID' width=90></e-column>
+        <e-column field='ShipAddress' headerText='ShipAddress ID' width=120></e-column>
+        <e-column field='ShipCity' headerText='ShipCity' format='yMd' width=120></e-column>
+        <e-column field='ShipCountry' headerText='ShipCountry' width=90></e-column>
+        <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+        <e-column field='OrderID' headerText='Order ID' width=90></e-column>
+        <e-column field='EmployeeID' headerText='Employee ID' width=120></e-column>
+      </e-columns>
+    </ejs-grid>
+    <ejs-grid #Grid id='Grid' [dataSource]='data' [childGrid]='childGrid'>
+      <e-columns>
+        <e-column field='EmployeeID' headerText='Employee ID' width='120' textAlign='Right'></e-column>
+        <e-column field='FirstName' headerText='Name' width='140'></e-column>
+        <e-column field='Title' headerText='Title' width='170'></e-column>
+        <e-column field='HireDate' headerText='Hired Date' width='120' format='yMd' textAlign='Right'></e-column>
+        <e-column field='ReportsTo' headerText='Reports To' width='120' textAlign='Right'></e-column>
       </e-columns>
     </ejs-grid>
   </nb-card-body>
